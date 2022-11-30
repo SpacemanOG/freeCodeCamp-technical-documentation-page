@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>spaceman(webdev) Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user -->
+    <nav id="navbar">
+        <header>Project Documentation</header>
+
+        <!-- Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section -->
+        <a class="nav-link" href="#introduction">Introduction</a>
+        <a class="nav-link" href="#structure">Structure</a>
+        <a class="nav-link" href="#the_navbar">The Navbar</a>
+        <a class="nav-link" href="#the_navbar_fix">The Navbar Fix</a>
+        <a class="nav-link" href="#last_words">Last words</a>
+
+        <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy"
+                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFG8tYYPeo&#x2F;view?embed"
+                allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
+        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFG8tYYPeo&#x2F;view?utm_content=DAFG8tYYPeo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+            target="_blank" rel="noopener">Scratch MIT profile picture</a> by Canva Pro
+
+    </nav>
+
+    <main id="main-doc">
+
+        <!-- SECTION ID: 1 OF 5 -->
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>This project is a requirement for the Responsive Web Design tutorial provided by freeCodeCamp. Here I
+                will be explaining some of the things I have done in this project. Also, there will be parts with Lorem
+                dummy texts to fill up the spaces. A sample can be seen in the paragraph below.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacus dui, vestibulum vel interdum non,
+                dictum rhoncus elit. Donec consectetur quis risus ut ultricies. Pellentesque nisi felis, iaculis eget
+                nulla vitae, aliquet vulputate nisl. Nulla fermentum a dolor a viverra. Fusce vitae interdum ante. Donec
+                laoreet magna justo, eget aliquet sapien bibendum in. Sed tincidunt venenatis mi, non mattis elit.
+                Suspendisse vulputate maximus libero, vel convallis nisl. Aenean tortor neque, aliquet rhoncus lorem id,
+                suscipit aliquam quam. Vivamus laoreet pretium odio, sit amet viverra metus pellentesque vitae.
+                Pellentesque commodo tempor turpis ut imperdiet.</p>
+            <ul>
+                <li>The box below shows the code that was used to define the font for this document:</li>
+            </ul>
+            <code>
+          body {
+  font-family: 'Roboto', sans-serif;
+}
+        </code>
+        </section>
+
+        <!-- SECTION ID: 2 OF 5 -->
+        <section class="main-section" id="structure">
+            <header>Structure</header>
+            <p>The structure of this project/page seems straight forward. I have a <span>main</span> section where all
+                the contents are stored. Then I have the side <span>nav</span> panel where the links to the
+                <span>section</span> elements are displayed. I will also be sharing some of the codes using the
+                <span>code</span> tag. Lastly, I have unordered lists <span>ul</span> to highlight some key points, I
+                guess!
+            </p>
+            <p>Nulla facilisi. Suspendisse laoreet velit lacinia dolor accumsan, et faucibus arcu sollicitudin. Ut
+                posuere, mi ut viverra placerat, enim dolor bibendum est, nec ornare mi erat a lacus. Praesent finibus
+                iaculis est, ac vulputate sem vestibulum vitae. Nulla quis neque pellentesque, elementum ante sed,
+                volutpat lorem. Morbi eu lacus mattis, condimentum mi vitae, bibendum mi. Maecenas sed lacus erat.</p>
+
+            <ul>
+                <li>While writing this section, I added the following CSS:</li>
+            </ul>
+
+            <code><pre>span {
+  background-color: #F7F7F7;
+  border: 1px solid #4D4E53;
+  padding: .05rem .2rem;
+}
+
+.main-section {
+  border-top: 2px solid #4D4E53;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.main-section header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4D4E53;
+}
+
+.main-section p {
+  line-height: 1.5rem;
+}
+
+.main-section p:nth-child(3) {
+  color:#F7F7F7;
+}
+
+code {
+  background-color: #F7F7F7;
+  color: #4D4E53;
+  padding: 1rem;
+  margin: 0 1rem;
+  display: block;
+}</pre></code>
+        </section>
+
+        <!-- SECTION ID: 3 OF 5 -->
+        <section class="main-section" id="the_navbar">
+            <header>The Navbar</header>
+            <p>I am confortable with the rest of the project except this one. I need to figure this one out I guess. I
+                am thinking that I will use <span>float</span> and <span>width</span> to put the Navbar on the left, and
+                the Main content on the right. Let's see if that works!</p>
+            <p>In volutpat lorem libero, a aliquet magna suscipit et. Aliquam a placerat magna. Cras erat nulla,
+                lobortis accumsan finibus ultrices, euismod a quam. Suspendisse tempor id felis eget fermentum.
+                Curabitur a ex ultricies, sagittis quam vel, efficitur libero. Vivamus hendrerit egestas fringilla.
+                Proin ullamcorper facilisis lacinia. Mauris volutpat dolor non bibendum gravida.</p>
+            <ul>
+                <li>I am thinking something like this:</li>
+            </ul>
+            <code>
+          <pre>#navbar {
+  width: 30%;
+  float: left;
+}
+
+#main-doc {
+  width: 70%;
+  float: left;
+}</pre>
+        </code>
+        </section>
+
+        <!-- SECTION ID: 4 OF 5 -->
+        <section class="main-section" id="the_navbar_fix">
+            <header>The Navbar Fix</header>
+            <p>Well, after tinkering with the <span>float</span> for a few minutes, I realized that perhaps the correct
+                way would be to use the <span>position</span> properties.</p>
+            <p>Fusce risus sapien, aliquet eget nisl at, egestas venenatis augue. Mauris hendrerit ante dolor, nec
+                feugiat elit fermentum et. Nullam in molestie nisi. Praesent in enim augue. Sed tristique ex sit amet
+                tortor consequat, vel vulputate felis aliquet. Sed placerat sagittis justo eget pulvinar. Aliquam auctor
+                justo vitae justo condimentum porttitor.</p>
+            <ul>
+                <li>So, this is what I did:</li>
+            </ul>
+            <code><pre>#navbar {
+  width: 24%;
+  /* float: left; */
+  padding: 1rem 0;
+  position: fixed;
+}
+
+#main-doc {
+  width: 70%;
+  /* float: left; */
+  padding: 0 1rem;
+  border-left: 2px solid #4D4E53;
+  position: absolute;
+  left: 25%;
+}</pre></code>
+        </section>
+
+        <!-- SECTION ID: 5 OF 5 -->
+        <section class="main-section" id="last_words">
+            <header>Last words</header>
+            <p>This was an interesting project. At the first look, I was kind of intimidated (tbh)! Even a few months
+                ago, I had no idea about how such a page is built. But now, when I tried to do it myself, I felt really
+                excited doing it. Also, just to reiterate, this is the fist time I have built a project like this. So,
+                kudos to the freeCodeCamp team for arranging this. Cheers!</p>
+            <p>Integer varius elementum sapien. Aliquam in viverra justo. Praesent porta, enim vitae euismod semper,
+                ante dui commodo turpis, sodales molestie quam sapien a metus. Nam euismod mauris ut erat lacinia
+                volutpat. Nunc eu lorem at lectus mattis pulvinar sit amet et dolor. Duis non sapien ut tortor venenatis
+                posuere vel nec nunc. Morbi sit amet nisl volutpat, maximus lorem nec, semper neque. Quisque elementum
+                tellus augue, quis lobortis libero interdum quis. Nulla tellus lacus, elementum sit amet nisi in,
+                vehicula finibus magna. Praesent ut tortor eu massa malesuada aliquam.</p>
+            <ul>
+                <li>Here's the full CSS:</li>
+            </ul>
+            <code><pre>html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+  width: 24%;
+  /* float: left; */
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#navbar header {
+  margin-bottom: 1rem;
+}
+
+#navbar a {
+  display: block;
+  line-height: 4rem;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #4D4E53;
+  text-decoration: none;
+  cursor: pointer;
+  color: #4D4E53;
+}
+
+#navbar a:nth-child(6) {
+  border: 0;
+}
+
+#navbar a:hover {
+  background-color: #F7F7F7;
+}
+
+#main-doc {
+  width: 70%;
+  /* float: left; */
+  padding: 0 1rem;
+  border-left: 2px solid #4D4E53;
+  position: absolute;
+  left: 25%;
+  z-index: 9;
+  background-color: #ffffff;
+}
+
+span {
+  background-color: #F7F7F7;
+  border: 1px solid #4D4E53;
+  padding: .05rem .2rem;
+}
+
+.main-section {
+  border-top: 2px dotted #4D4E53;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+#main-doc .main-section:first-child {
+  border: 0;
+  margin: 0;
+}
+
+.main-section header, #navbar header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4D4E53;
+}
+
+.main-section p {
+  line-height: 1.5rem;
+}
+
+.main-section p:nth-child(3) {
+  color:#F7F7F7;
+}
+
+code {
+  background-color: #F7F7F7;
+  color: #4D4E53;
+  padding: 1rem;
+  margin: 0 1rem;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .main-section header::after {
+    content: "Special note: Your viewport is 800px or less";
+    display: block;
+    color: #ffffff;
+    font-size: 2.4vw;
+    background-color:#4D4E53;
+    padding: 1rem;
+  }
+}</pre></code>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

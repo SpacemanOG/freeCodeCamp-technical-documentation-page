@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+    width: 24%;
+    /* float: left; */
+    padding: 1rem 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar header {
+    margin-bottom: 1rem;
+}
+
+#navbar a {
+    display: block;
+    line-height: 4rem;
+    padding-left: 2rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #4D4E53;
+    text-decoration: none;
+    cursor: pointer;
+    color: #4D4E53;
+}
+
+#navbar a:nth-child(6) {
+    border: 0;
+}
+
+#navbar a:hover {
+    background-color: #F7F7F7;
+}
+
+#main-doc {
+    width: 70%;
+    /* float: left; */
+    padding: 0 1rem;
+    border-left: 2px solid #4D4E53;
+    position: absolute;
+    left: 25%;
+    z-index: 9;
+    background-color: #ffffff;
+}
+
+span {
+    background-color: #F7F7F7;
+    border: 1px solid #4D4E53;
+    padding: .05rem .2rem;
+}
+
+.main-section {
+    border-top: 2px dotted #4D4E53;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+#main-doc .main-section:first-child {
+    border: 0;
+    margin: 0;
+}
+
+.main-section header,
+#navbar header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4D4E53;
+}
+
+.main-section p {
+    line-height: 1.5rem;
+}
+
+.main-section p:nth-child(3) {
+    color: #F7F7F7;
+}
+
+code {
+    background-color: #F7F7F7;
+    color: #4D4E53;
+    padding: 1rem;
+    margin: 0 1rem;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .main-section header::after {
+        content: "Special note: Your viewport is 800px or less";
+        display: block;
+        color: #ffffff;
+        font-size: 2.4vw;
+        background-color: #4D4E53;
+        padding: 1rem;
+    }
+}
